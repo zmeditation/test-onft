@@ -51,9 +51,10 @@
     "start": "npm run server | npm run client",
     "client": "react-scripts start",
     "server": "node src/api/server.js",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "react-scripts build",
+    "build-force": "npm-run-all -s build || true"
   },
   "eslintConfig": {
     "extends": "react-app"
